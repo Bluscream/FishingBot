@@ -1,4 +1,4 @@
-FROM maven:3.8.1-adoptopenjdk-16 as builder
+FROM maven:3.8.3-adoptopenjdk-16 as builder
 WORKDIR /srv/build
 COPY . .
 RUN mvn package
